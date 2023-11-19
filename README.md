@@ -1,7 +1,7 @@
 # esp_pwm_reader
 Wrapper around the mcpwm capture module for reading pwm signals.
 # Documentation
-- see https://daschr.github.io/esp_pwm_reader/esp_pwm_reader/index.html
+- see <https://daschr.github.io/esp_pwm_reader/esp_pwm_reader/index.html>
   
 # Usage
 - you need to create a capture timer which can then be used by multiple channel readers
