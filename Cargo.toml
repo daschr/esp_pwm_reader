@@ -6,10 +6,8 @@ license = "MIT"
 description = "Wrapper around the mcpwm capture module for reading pwm signals."
 homepage = "https://github.com/daschr/esp_pwm_reader"
 repository = "https://github.com/daschr/esp_pwm_reader"
-include = [
-  "src/",
-  "Cargo.toml"  
-]
+exclude = [ ".embuild/"]
+
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
