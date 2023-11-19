@@ -20,6 +20,7 @@ use std::sync::Arc;
 /// This timer is used by a capture Channel insinde a ChannelReader.
 /// It can be used by multiple ChannelReader instance.
 /// Also see <https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/peripherals/mcpwm.html?highlight=mcpwm_new_capture_timer#capture>
+#[derive(Debug)]
 pub struct CaptureTimer {
     #[doc(hidden)]
     timer: *mut mcpwm_cap_timer_t,
@@ -27,6 +28,7 @@ pub struct CaptureTimer {
 
 /// Errors which can occur by calls to the mcpwm submodule of the esp-idf at different stages.
 /// See mcpwm_capture_timer_enable ff.: <https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/peripherals/mcpwm.html?highlight=mcpwm_new_capture_timer#_CPPv426mcpwm_capture_timer_enable24mcpwm_cap_timer_handle_t>
+#[derive(Debug)]
 pub enum CaptureTimerError {
     InvalidGroupId,
     /// at mcpwm_capture_timer_start
@@ -104,12 +106,14 @@ impl CaptureTimer {
 }
 
 #[doc(hidden)]
+#[derive(Debug)]
 struct PwmCtx {
     start: AtomicU32,
     delta: AtomicU32,
 }
 
 /// Can read the current value of the PWM signal on the specified pin in microseconds
+#[derive(Debug)]
 pub struct ChannelReader {
     #[doc(hidden)]
     ctx: Arc<PwmCtx>,
