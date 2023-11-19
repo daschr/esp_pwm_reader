@@ -240,7 +240,9 @@
 <a href="#240" id="240">240</a>
 <a href="#241" id="241">241</a>
 <a href="#242" id="242">242</a>
+<a href="#243" id="243">243</a>
 </pre></div><pre class="rust"><code><span class="attr">#![doc(test(no_crate_inject))]
+#![doc = <span class="macro">include_str!</span>(<span class="string">&quot;../README.md&quot;</span>)]
 
 </span><span class="kw">use </span>esp_idf_sys::{
     __BindgenBitfieldUnit, gpio_num_t, mcpwm_cap_channel_handle_t, mcpwm_capture_channel_config_t,

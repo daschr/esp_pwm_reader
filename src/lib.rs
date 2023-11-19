@@ -1,4 +1,5 @@
 #![doc(test(no_crate_inject))]
+#![doc = include_str!("../README.md")]
 
 use esp_idf_sys::{
     __BindgenBitfieldUnit, gpio_num_t, mcpwm_cap_channel_handle_t, mcpwm_capture_channel_config_t,
