@@ -1,11 +1,12 @@
 [package]
 name = "esp_pwm_reader"
-version = "0.1.1"
+version = "0.1.2"
 edition = "2021"
 license = "MIT"
 description = "Wrapper around the mcpwm capture module for reading pwm signals."
 homepage = "https://github.com/daschr/esp_pwm_reader"
 repository = "https://github.com/daschr/esp_pwm_reader"
+documentation = "https://daschr.github.io/esp_pwm_reader/esp_pwm_reader/index.html"
 include = [ "src/*", "Cargo.toml"]
 
 
