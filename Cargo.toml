@@ -1,6 +1,6 @@
 [package]
 name = "esp_pwm_reader"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 license = "MIT"
 description = "Wrapper around the mcpwm capture module for reading pwm signals."
